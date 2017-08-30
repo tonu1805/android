@@ -3,9 +3,13 @@ package com.example.pacman.first_app;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.media.Image;
 import android.net.Uri;
+import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.graphics.BitmapCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,8 +31,16 @@ public class image_activity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent,200);
+
+
+
 
             }
+
+
+
         });
 
 
@@ -58,6 +70,17 @@ public class image_activity extends AppCompatActivity {
         });
 
 
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityReenter(resultCode, data);
+        if(requestCode==200 && resultCode==RESULT_OK&& data !=null){
+            Bitmap bitmap=(Bitmap) data.getExtras().get("data");
+            i1.setImageBitmap(bitmap);
+
+
+        }
     }
 
     private void init()
