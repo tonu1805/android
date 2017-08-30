@@ -38,7 +38,7 @@ public class image_activity extends AppCompatActivity {
                Intent intent=new Intent(Intent.ACTION_CALL);
                intent.setData(Uri.parse("tel:"+ed1.getText().toString()));
                if (ActivityCompat.checkSelfPermission(image_activity.this, Manifest.permission.CALL_PHONE) !=
-               PackageManager.PERMISSION_DENIED) {
+               PackageManager.PERMISSION_GRANTED) {
                    return;
                }
 

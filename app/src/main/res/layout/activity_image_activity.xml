@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/android"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="17dp" />
+        android:layout_marginStart="20dp" />
 
     <Button
         android:id="@+id/button2"
@@ -33,6 +33,7 @@
         android:layout_height="50dp"
         tools:text="Mobile Number"
         android:layout_marginTop="60dp"
+        android:layout_marginLeft="17dp"
         android:id="@+id/editText"
         android:layout_below="@+id/imageView2"
         android:layout_alignParentStart="true" />
@@ -50,10 +51,11 @@
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText"
         android:layout_marginTop="41dp"
+        android:layout_marginLeft="17dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Enter URL"
