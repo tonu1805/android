@@ -25,7 +25,7 @@ public class First_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_layout);
         AssetManager assetManager=getAssets();
-        Typeface abc=Typeface.createFromAsset(assetManager,"font/Xanadu.ttf");
+        Typeface abc=Typeface.createFromAsset(assetManager, "font/xanadu.ttf");
         final Button btn=(Button) findViewById(R.id.first_btn);
         btn.setTypeface(abc);
 

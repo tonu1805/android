@@ -4,68 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a72525"
+    android:background="@color/colorPrimary"
     tools:context="com.example.pacman.first_app.image_activity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/android" />
 
-        android:layout_marginTop="49dp"
-        app:srcCompat="@drawable/android"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="20dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="74dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="Capture Image" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Mobile Number"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:id="@+id/editText" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_centerVertical="true"
+        android:text="Call" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="39dp"
+        android:hint="Enter Url" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Capture Image"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="62dp" />
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:text="web open" />
 
-    <EditText
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        tools:text="Mobile Number"
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="17dp"
-        android:id="@+id/editText"
-        android:layout_below="@+id/imageView2"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call"
-        android:layout_alignBaseline="@+id/editText"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_toEndOf="@+id/editText"
-        android:layout_marginStart="16dp" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
-        android:layout_marginTop="41dp"
-        android:layout_marginLeft="17dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter URL"
-        android:layout_toStartOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button3"
-        android:layout_alignTop="@+id/editText2"
-        android:text="WEB" />
 </RelativeLayout>

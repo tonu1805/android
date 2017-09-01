@@ -3,13 +3,9 @@
     package="com.example.pacman.first_app">
 
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.CALL_PHONE">
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
-
-
-    </uses-permission>
-
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,13 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
-        <activity android:name=".First_activity">
-
-        </activity>
+        <activity android:name=".First_activity" />
         <activity
             android:name=".second_activity"
             android:parentActivityName=".First_activity" />
-        <activity android:name=".image_activity">
+        <activity android:name=".image_activity" />
+        <activity android:name=".ActivityList">
+        </activity>
+        <activity android:name=".MyDatabase">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
