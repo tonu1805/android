@@ -19,10 +19,11 @@
             android:name=".second_activity"
             android:parentActivityName=".First_activity" />
         <activity android:name=".image_activity" />
-        <activity android:name=".ActivityList">
-        </activity>
+        <activity android:name=".ActivityList"></activity>
         <activity android:name=".MyDatabase">
 
+        </activity>
+        <activity android:name=".horizontalview">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
