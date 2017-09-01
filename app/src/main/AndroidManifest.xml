@@ -23,6 +23,9 @@
         </activity>
         <activity android:name=".MyDatabase">
 
+
+        </activity>
+        <activity android:name=".login_class">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
